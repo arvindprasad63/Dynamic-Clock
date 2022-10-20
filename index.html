@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Clock</title>
+    <style>
+        body{
+        background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <h1 style="color:blue; background-color: aquamarine;">
+     <button onclick="clearInterval(clock)">
+       <b> click me</b></button></h1><br>
+    <p id="showClock"></p>
+
+    <script type="text/javascript">
+
+        var clock = setInterval(clockTiming, 1000)
+
+        function clockTiming(){
+        var d = new Date();
+        var arvind = d.toLocaleTimeString();
+        document.getElementById('showClock').
+        innerHTML = arvind;
+        }
+
+    </script><br> <hr><br>
+
+    <button>I am Arvind.</button>
+    <br><br>
+
+    <img src="Arvind photo.jpg" width="200" 
+    height="100" alt="DynamicClock">
+</body>
+</html>
